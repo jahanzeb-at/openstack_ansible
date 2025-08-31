@@ -1,4 +1,4 @@
-#OpenStack_Ansible
+## OpenStack_Ansible
 
 The repository contains configuration files used for deployment of a three node OpenStack_Ansible (OSA).
 
