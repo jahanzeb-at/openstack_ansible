@@ -138,7 +138,7 @@ install_method: source
 ## Example environment variable setup:
 ## This is used by apt-cacher-ng to download apt packages:
 # proxy_env_url: http://username:pa$$w0rd@10.10.10.9:9000/
-proxy_env_url: http://192.168.31.28:3128/
+proxy_env_url: http://proxy.domain.com:3128/
 
 ## (1) This sets up a permanent environment, used during and after deployment:
 no_proxy_env: "localhost,127.0.0.1,{{ internal_lb_vip_address }},{{ external_lb_vip_address }},{% for host in groups['all_containers'] %}{{ hostvars[host]['management_address'] }}{% if not l
